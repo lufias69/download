@@ -1,0 +1,7 @@
+1. Stop terlebih dahulu docker dengan perintah "docker-compose stop"
+2. Ekstrak file app.7z
+3. Replace folder app dan nginx hasil ekstrak ke dalam folder app di lokasi NEOFEEDER yang digunakan untuk docker
+4. Jalankan perintah "chmod 775 -R app" dengan menggunakan terminal
+5. Jalankan juga perintah "chmod +x app/server-linux"
+6. Kemudian build kembali aplikasi dengan perintah "docker-compose build --no-cache"
+7. Setelah itu jalankan kembali aplikasi dengan perintah "docker-compose up -d"
